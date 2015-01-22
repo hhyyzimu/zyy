@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <assert.h>
+
+void *my_memset(void *src, int c, size_t count)
+{
+	assert(src != NULL);
+	printf("func = %s, line = %d\n", __func__, __LINE__);
+	char *tmpsrc = (char *)src;
+	while(count--)
+		*tmpsrc++ = (char)c;
+
+	return src;
+}
+
+int main()
+{
+	void *src = NULL;
+	int c = 5;
+	size_t count = 10;
+	char *des = NULL;
+
+	des = my_memset(src, c, count);
+	printf("src = %s\n", des);
+
+	exit(0);
+}

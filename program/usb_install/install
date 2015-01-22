@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sudo mount /dev/sdb /mnt
+cd /mnt && sudo ./build_usb.sh
+cd ~
+
+sudo umount /dev/sdb

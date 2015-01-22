@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+	char *buf1 = "BBB", buf2 = "bbb";
+	int ptr;
+	ptr = strcmpi(buf2,buf1);
+	if(ptr > 0)
+	printf("buf2 is greater than buf1\n");
+
+	if(ptr < 0)
+	printf("buf2 is greater than buf1\n");
+
+	if(ptr == 0)
+	printf("buf2 is equals buf1\n");
+
+	exit(0);
+}
