@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <assert.h>
+
+char *my_strcpy(char *strDest, const char *strSrc)
+{
+	//对源地址和目的地址加非0判断
+	if((strDest == NULL) || (strSrc == NULL)) 
+		return NULL;
+	char *address = strDest;
+	while((*strDest++ = *strSrc++) != '\0');
+
+	return address;
+}
+
+int main(void)
+{
+	char *a = "hello";
+	char *b = NULL;
+	char *temp = NULL;
+
+	temp = my_strcpy(b, a);
+
+	printf("%s\n", temp);
+
+	exit(0);
+}

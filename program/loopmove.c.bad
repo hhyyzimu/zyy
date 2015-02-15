@@ -1,0 +1,30 @@
+/*"abcdefghi"
+ *===>"hiabcdefg"
+ * */
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define TEMP_SIZE	1024
+
+void loopmove(char *str, int n)
+{
+	int len = strlen(str) - n;
+	char *temp[1024];
+
+	strcpy(temp, str + len); //将hi存入temp中
+	strcpy(temp + n, str); //将剩下的接在hi后面
+	*(temp + strlen(str)) == '\0'; //在fg后加入'\0',多余的添加在hi后面的字符（hi）自然就没了
+	strcpy(str, temp); //将改变后的值重新给str
+}
+
+int main(void)
+{
+	int n = 2;
+	char *str = "abcdefghi";
+	loopmove(str, n);
+
+	printf("%s\n", str);
+
+	exit(0);
+}
