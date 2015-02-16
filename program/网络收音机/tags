@@ -1,0 +1,91 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CHNID_LIST	include/proto.h	9;"	d
+CHN_MELIB_OFF	server/medialib.c	/^	CHN_MELIB_OFF = 0,$/;"	e	enum:__anon1	file:
+CHN_MELIB_ON	server/medialib.c	/^	CHN_MELIB_ON$/;"	e	enum:__anon1	file:
+CLIENT_H__	client/client.h	2;"	d
+DEFAULT_MGROUP	include/proto.h	5;"	d
+DEFAULT_PLAYER	client/client.h	5;"	d
+DEFAULT_RCVPORT	include/proto.h	6;"	d
+MAXCHNID	include/proto.h	11;"	d
+MAX_DATA	include/proto.h	16;"	d
+MAX_ENTRY	include/proto.h	17;"	d
+MAX_ENTRY_ONE	include/proto.h	18;"	d
+MAX_MSG	include/proto.h	15;"	d
+MEDIALIB_1_H__	server/medialib.h	2;"	d
+MINCHNID	include/proto.h	10;"	d
+NAMESIZE	server/medialib.c	16;"	d	file:
+NR_CHN	include/proto.h	8;"	d
+PATHSIZE	server/medialib.c	17;"	d	file:
+PRPTO_H_	include/proto.h	2;"	d
+SIZE	client/client.c	15;"	d	file:
+arguement	server/thr_chan.c	/^struct arguement$/;"	s	file:
+channels	server/medialib.c	/^static struct mlib_chn_context_st *channels[NR_CHN];$/;"	v	typeref:struct:mlib_chn_context_st	file:
+chndata_send	server/thr_chan.c	/^void chndata_send(int sd)$/;"	f
+chndata_send_one	server/thr_chan.c	/^void *chndata_send_one(void *p)$/;"	f
+chnfile	server/medialib.c	/^	char chnfile[NAMESIZE];$/;"	m	struct:mlib_chn_context_st	file:
+chnid	include/proto.h	/^	chnid_t chnid;		\/*[MINCHNID,MAXCHNID]*\/$/;"	m	struct:msg_channel_st
+chnid	include/proto.h	/^	chnid_t chnid;      \/*CHNID_LIST --> 0*\/$/;"	m	struct:msg_list_st
+chnid	include/proto.h	/^	chnid_t chnid;$/;"	m	struct:list_entry_st
+chnid	server/medialib.c	/^	chnid_t chnid;$/;"	m	struct:mlib_chn_context_st	file:
+chnid	server/medialib.h	/^	chnid_t chnid;$/;"	m	struct:mlib_chn_st
+chnid_t	include/proto.h	/^typedef uint8_t chnid_t;$/;"	t
+chnlist_getlist	server/thr_list.c	/^static struct msg_list_st *chnlist_getlist()$/;"	f	file:
+chnlist_send	server/thr_list.c	/^int chnlist_send(int sd)$/;"	f
+cid	server/thr_chan.c	/^	chnid_t cid;$/;"	m	struct:arguement	file:
+client_conf	client/client.c	/^struct client_conf_st client_conf = {$/;"	v	typeref:struct:client_conf_st
+client_conf_st	client/client.h	/^struct client_conf_st$/;"	s
+cond	server/medialib.c	/^	pthread_cond_t cond;$/;"	m	struct:mlib_chn_context_st	file:
+cps	server/medialib.c	/^	int cps;\/\/速率$/;"	m	struct:mlib_chn_context_st	file:
+cps	server/medialib.h	/^	int cps;$/;"	m	struct:mlib_chn_st
+curr	server/medialib.c	/^	int curr;$/;"	m	struct:mlib_chn_context_st	file:
+data	include/proto.h	/^	uint8_t data[1];$/;"	m	struct:msg_channel_st
+datasize	include/proto.h	/^	uint32_t datasize;$/;"	m	struct:msg_channel_st
+desc	include/proto.h	/^	uint8_t desc[MAX_ENTRY_ONE];$/;"	m	struct:list_entry_st
+desc	server/medialib.h	/^	char *desc;$/;"	m	struct:mlib_chn_st
+entry	include/proto.h	/^	struct list_entry_st entry[1];$/;"	m	struct:msg_list_st	typeref:struct:msg_list_st::list_entry_st
+f1	client/client.c	/^static void f1(void)$/;"	f	file:
+f2	client/client.c	/^static void f2(void)$/;"	f	file:
+find_music_unlocked	server/medialib.c	/^static char *find_music_unlocked(int pos)$/;"	f	file:
+find_txt_unlocked	server/medialib.c	/^static char *find_txt_unlocked(int pos)$/;"	f	file:
+func	client/client.c	/^static void *func(void *p)$/;"	f	file:
+get_chnonnum_unlocked	server/medialib.c	/^static int get_chnonnum_unlocked()$/;"	f	file:
+get_free_pos_unlocked	server/medialib.c	/^static int get_free_pos_unlocked(void)$/;"	f	file:
+glob	server/medialib.c	/^	glob_t glob;$/;"	m	struct:mlib_chn_context_st	file:
+init_once	server/medialib.c	/^static pthread_once_t init_once = PTHREAD_ONCE_INIT;$/;"	v	file:
+length	include/proto.h	/^	uint8_t length;$/;"	m	struct:msg_list_st
+list_entry_st	include/proto.h	/^struct list_entry_st$/;"	s
+main	client/client.c	/^int main(int argc,char *argv[])$/;"	f
+main	server/server.c	/^int main()$/;"	f
+mgroup	client/client.h	/^	char *mgroup;$/;"	m	struct:client_conf_st
+mlib_add_channel	server/medialib.c	/^int mlib_add_channel(char *pathname,int cps)$/;"	f
+mlib_alrm	server/medialib.c	/^static void *mlib_alrm(void *p)$/;"	f	file:
+mlib_chn_context_st	server/medialib.c	/^struct mlib_chn_context_st$/;"	s	file:
+mlib_chn_st	server/medialib.h	/^struct mlib_chn_st$/;"	s
+mlib_delchnlist	server/medialib.c	/^int mlib_delchnlist(struct mlib_chn_st * chnlist)$/;"	f
+mlib_getchndata	server/medialib.c	/^int mlib_getchndata(struct mlib_chn_st *chnl)$/;"	f
+mlib_getchnlist	server/medialib.c	/^int mlib_getchnlist(struct mlib_chn_st **chnl,int *chnum)$/;"	f
+mlib_off_channel	server/medialib.c	/^int mlib_off_channel(int id)$/;"	f
+mlib_wait_channel	server/medialib.c	/^int mlib_wait_channel(int id)$/;"	f
+module_load	server/medialib.c	/^static void module_load(void)$/;"	f	file:
+module_unload	server/medialib.c	/^static void module_unload(void)$/;"	f	file:
+msg_channel_st	include/proto.h	/^struct msg_channel_st$/;"	s
+msg_data	client/client.c	/^struct msg_channel_st *msg_data;$/;"	v	typeref:struct:msg_channel_st
+msg_list	client/client.c	/^struct msg_list_st *msg_list;$/;"	v	typeref:struct:msg_list_st
+msg_list_st	include/proto.h	/^struct msg_list_st$/;"	s
+mut	server/medialib.c	/^	pthread_mutex_t mut;$/;"	m	struct:mlib_chn_context_st	file:
+mut_channels	server/medialib.c	/^static pthread_mutex_t mut_channels = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+player	client/client.h	/^	char *player;$/;"	m	struct:client_conf_st
+rcvport	client/client.h	/^	char *rcvport;$/;"	m	struct:client_conf_st
+sd	server/server.c	/^int sd;$/;"	v
+sd	server/thr_chan.c	/^	int sd;$/;"	m	struct:arguement	file:
+sel	client/client.c	/^uint32_t sel = 1;$/;"	v
+socket_init	server/server.c	/^int socket_init()\/\/初始化网络接口并创建多波组$/;"	f
+state	server/medialib.c	/^	int state;$/;"	m	struct:mlib_chn_context_st	file:
+thr_wait	server/medialib.c	/^static void *thr_wait(void *p)$/;"	f	file:
+tid	client/client.c	/^pthread_t tid;$/;"	v
+tid_alrm	server/medialib.c	/^static pthread_t tid_alrm;$/;"	v	file:
