@@ -17,9 +17,11 @@ void ShowCerts(SSL *ssl)
 	X509 *cert;
 	char *line;
 
+	/*从SSL套接字中提取对方的证书信息，这些信息已经被SSL验证过了*/
 	cert = SSL_get_peer_certificate(ssl);
 	if(cert != NULL){
 		printf("数字证书信息：\n");
+		/*得到证书所用者的名字*/
 		line = X509_NAME_oneline(X509_get_subject_name(cert), 0, 0);
 		printf("证书：%s\n", line);
 		free(line);

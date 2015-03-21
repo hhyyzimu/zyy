@@ -1,12 +1,15 @@
-
+/*a = 250.000
+ * b =           250
+ * */
 #include <stdio.h>
-#include <stdlib.h>
-
-#define PRINT_LINE fprintf(stderr, "%s %s %d\n", (char *)__FILE__, (char *)__FUNCTION__, (char *)__LINE__);
 
 int main()
 {
-	PRINT_LINE(NULL);
+	float a = 250;
+	int b = 250;
 
-	exit(0);
+	printf("a = %0.3f\n", a);
+	printf("b = %13d\n", b);
+
+	return 0;
 }
